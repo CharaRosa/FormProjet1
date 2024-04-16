@@ -250,4 +250,14 @@ footer{
   .hebergementMainCard:hover{
     transform: scale(1.02);
   }
+  .hebergementMainCardFigureImg{
+    position: relative;
+    min-height: 100%;
+    width: 33%;
+    min-width: 33%;
+    max-width: 33%;
+  }
+  .hebergementMainCardFigureCaption h3 {
+    margin: 0.25rem 0.75rem 0 0.75rem;
+  }
   
