@@ -111,7 +111,8 @@ footer{
 }
 
 .rechercheButton i {
-    display: block;
+  /*  display: block;*/
+    display: none;
 }
 .rechercheFiltres{
     display: flex;
@@ -215,3 +216,38 @@ footer{
       display: none !important;
     }
   }
+
+  /*CSS pour deuxieme section de main*/
+  /*HERBERGEMENT SECTION DIV HERBERGERMENT */
+  .hebergement{
+    display: grid;
+  column-gap: 2rem;
+  grid-template-columns: 6fr 3fr;
+  }
+  /*HERBERGEMENT SECTION DIV HERBERGERMENT MAIN*/
+  .hebergementMain{
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  .hebergementMainHeader{
+    grid-column: 1/-1;
+  }
+  .hebergementMainHeader h2{
+    margin: 0; 
+  }
+  /*HERBERGEMENT SECTION DIV HERBERGERMENT card*/
+  .hebergementMainCard{
+    background-color: white;
+    padding: 0.375rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #0000002e;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  .hebergementMainCard:hover{
+    transform: scale(1.02);
+  }
+  
