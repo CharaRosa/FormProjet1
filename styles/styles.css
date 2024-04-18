@@ -236,6 +236,27 @@ footer{
   .hebergementMainHeader h2{
     margin: 0; 
   }
+  @media (min-width: 925px) {
+    .hebergementMain {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 925px) and (min-width: 650px) {
+    .hebergementMain {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 650px) {
+    .hebergementMain {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 1000px) {
+    .hebergementPopulaire {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto repeat(3, 9rem);
+    }
+  }
   /*HERBERGEMENT SECTION DIV HERBERGERMENT card*/
   .hebergementMainCard{
     background-color: white;
@@ -250,14 +271,93 @@ footer{
   .hebergementMainCard:hover{
     transform: scale(1.02);
   }
-  .hebergementMainCardFigureImg{
-    position: relative;
-    min-height: 100%;
-    width: 33%;
-    min-width: 33%;
-    max-width: 33%;
+  .hebergementMainCardFigure{
+    margin: 0;
+
   }
-  .hebergementMainCardFigureCaption h3 {
+  .hebergementMainCardFigureimg{
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  .hebergementMainCardFigureCaptionTitle{
     margin: 0.25rem 0.75rem 0 0.75rem;
   }
+  /*prix par nuit*/
+  .hebergementPrix{
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+  }
+  .hebergementPrix strong {
+    font-weight: bold;
+  }
+  /*Stilisation des etoile de la carte*/
+  .styleEtoile{
+    margin: 0 0.75rem 0.25rem 0.75rem; 
+  }
   
+  .styleEtoileIcon[data-active=true]{
+    color: #0065FC; 
+  }
+  .styleEtoileIcon[data-active=false]{
+    color: #d9d9d9;
+  }
+  /*link voir plus*/
+  .linkVoirPlus{
+    font-weight: bold;
+  }
+/*herbergerment populaire*/
+.hebergementMain, .hebergementPopulaire{
+  background-color: #F2F2F2;
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.hebergementPopulaireWrapcontent{
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  overflow: auto;
+}
+.hebergementPopulaireTitle{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.hebergementPopulaireWrapcontentWrapimg{
+  position: relative;
+  min-height: 100%;
+  width: 33%;
+  min-width: 33%;
+  max-width: 33%;
+}
+.hebergementPopulaireWrapcontentWrapimg img{
+  border-radius: 1rem 0 0 1rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hebergementPopulaireWrapcontentContent{
+  display: flex;
+  flex-direction: column;
+}
+.hebergementPopulaireSpace {
+  flex: 1;
+}
+@media (max-width: 1440px) {
+  .hebergement {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .hebergementPopulaire {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 10rem;
+    column-gap: 2rem;
+    grid-row-start: 1;
+  }
+  .hostingPopularTitle {
+    grid-column: 1/-1;
+  }
+}
