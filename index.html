@@ -1,397 +1,454 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Accueil - Resevia </title>
-    <link href="styles/styles.css" rel="stylesheet">
-  <link rel="stylesheet" href="style/fontawesome.min.css" />
-  <!--Tu dois creer ton compte fontansome pour avoir ton kit-->
-  <script src="https://kit.fontawesome.com/406da18a0b.js" crossorigin="anonymous" defer></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="header">
-    <img class="headerImg" src="./images/beleci.png" alt="Reservia" />
-    <nav class="headerNav">
-      <a class="headerNavLink" href="#hosting" data-active="true">Hébergement</a>
-      <a class="headerNavLinkJaune" href="#activite" data-active="true">Activités</a>
-    </nav>
-    <a class="headerSignup" href="#">S'inscrire</a>
-  </header>
-  <!-- HEADER -->
+  <head>
+    <meta charset="UTF-8" />
+    <title>Accueil - Resevia</title>
+    <link href="styles/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style/fontawesome.min.css" />
+    <!--Tu dois creer ton compte fontansome pour avoir ton kit-->
+    <script
+      src="https://kit.fontawesome.com/406da18a0b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img class="headerImg" src="./images/beleci.png" alt="Reservia" />
+      <nav class="headerNav">
+        <a class="headerNavLink" href="#hosting" data-active="true"
+          >Hébergement</a
+        >
+        <a class="headerNavLinkJaune" href="#activite" data-active="true"
+          >Activités</a
+        >
+      </nav>
+      <a class="headerSignup" href="#">S'inscrire</a>
+    </header>
+    <!-- HEADER -->
     <main class="main">
- <!-- RECHERCHE-->
-    <section class="recherche">
-        <header class="mainrechercheheader" >
-            <h1 >
-              Trouvez votre hébergement pour des vacances de rêve
-            </h1>
-            <p >
-              En plein centre de ville ou en pleine nature
-            </p>
+      <!-- RECHERCHE-->
+      <section class="recherche">
+        <header class="mainrechercheheader">
+          <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+          <p>En plein centre de ville ou en pleine nature</p>
+        </header>
+        <form class="rechercheFrom" action="#" method="GET">
+          <span class="localisationIcon">
+            <i class="fas fa-map-marker-alt"></i>
+          </span>
+          <input
+            class="rechercheInput"
+            type="search"
+            placeholder="Marseille, France"
+            size="1"
+          />
+          <button class="rechercheButton">
+            <span>Rechercher</span>
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <div class="rechercheFiltres">
+          <h2>Filtres</h2>
+          <div class="rechercheSousFiltres1">
+            <div class="stylisationIcon">
+              <i class="fas fa-money-bill-wave couleurIcon"></i>
+            </div>
+            <span class="searchFiltersFilterTitle">Économique</span>
+          </div>
+          <div class="rechercheSousFiltres1">
+            <div class="stylisationIcon">
+              <i class="fas fa-child couleurIcon"></i>
+            </div>
+            <span class="searchFiltersFilterTitle">Familial</span>
+          </div>
+          <div class="rechercheSousFiltres1">
+            <div class="stylisationIcon">
+              <i class="fas fa-heart couleurIcon"></i>
+            </div>
+            <span class="searchFiltersFilterTitle">Romantique</span>
+          </div>
+          <div class="rechercheSousFiltres1">
+            <div class="stylisationIcon">
+              <i class="fas fa-dog couleurIcon"></i>
+            </div>
+            <span class="searchFiltersFilterTitle">Animaux autorisés</span>
+          </div>
+        </div>
+        <div class="rechercheResultat">
+          <div class="rechercheResultaticon">
+            <i class="fas fa-info couleurIcon"></i>
+          </div>
+          <p class="searchResultText">
+            Plus de 500 logements sont disponibles dans cette ville
+          </p>
+        </div>
+      </section>
+      <!-- RECHERCHE-->
+
+      <!--HEBERGERMENT-->
+      <section class="hebergement" id="hebergement">
+        <div class="hebergementMain">
+          <header class="hebergementMainHeader">
+            <h2 class="hostingMainHeaderTitle">Hébergement à N'Djamena</h2>
           </header>
-          <form class="rechercheFrom" action="#" method="GET">
-            <span class="localisationIcon">
-                <i class="fas fa-map-marker-alt "></i>
-            </span>
-            <input class="rechercheInput" type="search" placeholder="Marseille, France" size="1" />
-            <button class="rechercheButton">
-              <span >Rechercher</span>
-              <i class=" fas fa-search"></i>
-            </button>
-          </form>
-          <div class="rechercheFiltres">
-            <h2 >Filtres</h2>
-            <div class="rechercheSousFiltres1">
-              <div class="stylisationIcon">
-                <i class="fas fa-money-bill-wave couleurIcon"></i>
+          <article class="hebergementMainCard">
+            <a href="#">
+              <figure class="hebergementMainCardFigure">
+                <img
+                  class="hebergementMainCardFigureImg"
+                  src="./images/heberg/chambreradisson1.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+                <figcaption class="hebergementMainCardFigureCaption">
+                  <h3>Sherabel Hôtel</h3>
+                </figcaption>
+              </figure>
+              <p class="hebergementPrix">
+                Nuit à partir de
+                <strong>25€</strong>
+              </p>
+              <div class="styleEtoile">
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
               </div>
-              <span class="searchFiltersFilterTitle">Économique</span>
-            </div>
-            <div class="rechercheSousFiltres1">
-              <div class="stylisationIcon">
-                <i class="fas fa-child couleurIcon"></i>
+            </a>
+          </article>
+          <article class="hebergementMainCard">
+            <a href="#">
+              <figure class="hebergementMainCardFigure">
+                <img
+                  class="hebergementMainCardFigureImg"
+                  src="./images/heberg/chambreradisson2.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+                <figcaption class="hebergementMainCardFigureCaption">
+                  <h3 class="hebergementMainCardFigureCaptionTitle">
+                    Radisson Blu Hotel
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="hebergementPrix">
+                Nuit à partir de
+                <strong>52€</strong>
+              </p>
+              <div class="styleEtoile">
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
               </div>
-              <span class="searchFiltersFilterTitle">Familial</span>
-            </div>
-            <div class="rechercheSousFiltres1">
-              <div class="stylisationIcon">
-                <i class="fas fa-heart couleurIcon"></i>
+            </a>
+          </article>
+          <article class="hebergementMainCard">
+            <a href="#">
+              <figure class="hebergementMainCardFigure">
+                <img
+                  class="hebergementMainCardFigureImg"
+                  src="./images/heberg/chambreradisson3.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+                <figcaption class="hebergementMainCardFigureCaption">
+                  <h3 class="hebergementMainCardFigureCaptionTitle">
+                    Hôtel Irrisor
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="hebergementPrix">
+                Nuit à partir de
+                <strong>76€</strong>
+              </p>
+              <div class="styleEtoile">
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
               </div>
-              <span class="searchFiltersFilterTitle">Romantique</span>
-            </div>
-            <div class="rechercheSousFiltres1">
-              <div class="stylisationIcon">
-                <i class="fas fa-dog couleurIcon"></i>
-              </div>
-              <span class="searchFiltersFilterTitle">Animaux autorisés</span>
-            </div>
-          </div>
-          <div class="rechercheResultat">
-            <div class="rechercheResultaticon">
-              <i class="fas fa-info couleurIcon"></i>
-            </div>
-            <p class="searchResultText">
-              Plus de 500 logements sont disponibles dans cette ville
-            </p>
-          </div>
-    </section>
-  <!-- RECHERCHE-->
-
-  <!--HEBERGERMENT-->
-        <section class="herbergement" id="herbergement">
-          <div class="hebergementMain">
-            <header class="hebergementMainHeader">
-              <h2 class="hostingMainHeaderTitle">Hébergement à N'Djamena</h2>
-            </header>
-            <article class="hebergementMainCard">
-              <a href="#">
-                <figure class="hebergementMainCardFigure">
-                  <img class="hebergementMainCardFigureImg" src="./images/heberg/chambreradisson1.jpg"
-                    alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                  <figcaption class="hebergementMainCardFigureCaption">
-                    <h3>
-                     Sherabel Hôtel
-                    </h3>
-                  </figcaption>
-                </figure>
-                <p class="hebergementPrix">
-                  Nuit à partir de
-                  <strong >25€</strong>
-                </p>
-                <div class="styleEtoile">
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
-                </div>
-              </a>
-            </article>
-            <article class="hebergementMainCard">
-              <a href="#">
-                <figure class="hebergementMainCardFigure">
-                  <img class="hebergementMainCardFigureImg" src="./images/heberg/chambreradisson2.jpg"
-                    alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                  <figcaption class="hebergementMainCardFigureCaption">
-                    <h3 class="hebergementMainCardFigureCaptionTitle">
-                      Radisson Blu Hotel
-                    </h3>
-                  </figcaption>
-                </figure>
-                <p class="hebergementPrix">
-                  Nuit à partir de
-                  <strong >52€</strong>
-                </p>
-                <div class="styleEtoile">
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                </div>
-              </a>
-            </article>
-            <article class="hebergementMainCard">
-              <a href="#">
-                <figure class="hebergementMainCardFigure">
-                  <img class="hebergementMainCardFigureImg" src="./images/heberg/chambreradisson3.jpg"
-                    alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                  <figcaption class="hebergementMainCardFigureCaption">
-                    <h3 class="hebergementMainCardFigureCaptionTitle">
-                      Hôtel Irrisor
-                    </h3>
-                  </figcaption>
-                </figure>
-                <p class="hebergementPrix">
-                  Nuit à partir de
-                  <strong >76€</strong>
-                </p>
-                <div class="styleEtoile">
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
-                </div>
-              </a>
-            </article>
-            <article class="hebergementMainCard">
-              <a href="#">
-                <figure class="hebergementMainCardFigure">
-                  <img class="hebergementMainCardFigureImg" src="./images/heberg/chambreradisson4.webp"
-                    alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                  <figcaption class="hebergementMainCardFigureCaption">
-                    <h3 class="hebergementMainCardFigureCaptionTitle">
+            </a>
+          </article>
+          <article class="hebergementMainCard">
+            <a href="#">
+              <figure class="hebergementMainCardFigure">
+                <img
+                  class="hebergementMainCardFigureImg"
+                  src="./images/heberg/chambreradisson4.webp"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+                <figcaption class="hebergementMainCardFigureCaption">
+                  <h3 class="hebergementMainCardFigureCaptionTitle">
                     SAO Hôtel
-                    </h3>
-                  </figcaption>
-                </figure>
-                <p class="hebergementPrix">
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="hebergementPrix">
+                Nuit à partir de
+                <strong>46€</strong>
+              </p>
+              <div class="styleEtoile">
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
+              </div>
+            </a>
+          </article>
+          <article class="hebergementMainCard">
+            <a href="#">
+              <figure class="hebergementMainCardFigure">
+                <img
+                  class="hebergementMainCardFigureImg"
+                  src="./images/heberg/chambreradisson5.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+                <figcaption class="hebergementMainCardFigureCaption">
+                  <h3 class="hebergementMainCardFigureCaptionTitle">
+                    Hilton N'Djemena Toumai Place
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="hebergementPrix">
+                Nuit à partir de
+                <strong>23€</strong>
+              </p>
+              <div class="styleEtoile">
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
+              </div>
+            </a>
+          </article>
+          <article class="hebergementMainCard">
+            <a href="#">
+              <figure class="hebergementMainCardFigure">
+                <img
+                  class="hebergementMainCardFigureImg"
+                  src="./images/heberg/chambreradisson6.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+                <figcaption class="hebergementMainCardFigureCaption">
+                  <h3 class="hebergementMainCardFigureCaptionTitle">
+                    Hôtel La Residance N'Djemena
+                  </h3>
+                </figcaption>
+              </figure>
+              <p class="hebergementPrix">
+                Nuit à partir de
+                <strong>96€</strong>
+              </p>
+              <div class="styleEtoile">
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+              </div>
+            </a>
+          </article>
+          <a class="linkVoirPlus" href="#">Afficher plus</a>
+        </div>
+        <!-- HEBERGEMENT POPULAIRE-->
+        <aside class="hebergementPopulaire">
+          <h2 class="hebergementPopulaireTitle">
+            Les plus populaire <i class="fas fa-chart-line"></i>
+          </h2>
+          <article class="hebergementMainCard hebergementPopulaireCard">
+            <a class="hebergementPopulaireWrapcontent" href="#">
+              <div class="hebergementPopulaireWrapcontentWrapimg">
+                <img
+                  class="hebergementPopulaireWrapcontentWrapimgImg"
+                  src="./images/heberg/hebergementPopulaire1.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+              </div>
+              <div class="hebergementPopulaireWrapcontentContent">
+                <h3 class="hebergementMainCardFigureCaptionTitle">
+                  Ca Dalisera B&B Venezia
+                </h3>
+                <p class="hebergementMainCardDesc">
                   Nuit à partir de
-                  <strong >46€</strong>
+                  <strong class="hebergementMainCardDescPrice">128€</strong>
                 </p>
-                <div class="styleEtoile">
+                <div class="hebergementPopulaireSpace"></div>
+                <div class="hebergementMainCardGrade">
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
+                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                 </div>
-              </a>
-            </article>
-            <article class="hebergementMainCard">
-              <a href="#">
-                <figure class="hebergementMainCardFigure">
-                  <img class="hebergementMainCardFigureImg" src="./images/heberg/chambreradisson5.jpg"
-                    alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                  <figcaption class="hebergementMainCardFigureCaption">
-                    <h3 class="hebergementMainCardFigureCaptionTitle">
-                      Hilton N'Djemena Toumai Place
-                    </h3>
-                  </figcaption>
-                </figure>
-                <p class="hebergementPrix">
+              </div>
+            </a>
+          </article>
+          <article class="hebergementMainCard hebergementPopulaireCard">
+            <a class="hebergementPopulaireWrapcontent" href="#">
+              <div class="hebergementPopulaireWrapcontentWrapimg">
+                <img
+                  class="hebergementPopulaireWrapcontentWrapimgImg"
+                  src="./images/heberg/hebergementPopulaire2.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+              </div>
+              <div class="hebergementPopulaireWrapcontentContent">
+                <h3 class="hebergementMainCardFigureCaptionTitle">
+                  Hotel Florida
+                </h3>
+                <p class="hebergementMainCardDesc">
                   Nuit à partir de
-                  <strong >23€</strong>
+                  <strong class="hebergementMainCardDescPrice">71€</strong>
                 </p>
-                <div class="styleEtoile">
+                <div class="hebergementPopulaireSpace"></div>
+                <div class="hebergementMainCardGrade">
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
+                  <i
+                    class="fas fa-star styleEtoileIcon"
+                    data-active="false"
+                  ></i>
                 </div>
-              </a>
-            </article>
-            <article class="hebergementMainCard">
-              <a href="#">
-                <figure class="hebergementMainCardFigure">
-                  <img class="hebergementMainCardFigureImg" src="./images/heberg/chambreradisson6.jpg"
-                    alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                  <figcaption class="hebergementMainCardFigureCaption">
-                    <h3 class="hebergementMainCardFigureCaptionTitle">
-                      Hôtel La Residance N'Djemena
-                    </h3>
-                  </figcaption>
-                </figure>
-                <p class="hebergementPrix">
+              </div>
+            </a>
+          </article>
+          <article class="hebergementMainCard hebergementPopulaireCard">
+            <a class="hebergementPopulaireWrapcontent" href="#">
+              <div class="hebergementPopulaireWrapcontentWrapimg">
+                <img
+                  class="hebergementPopulaireWrapcontentWrapimgImg"
+                  src="./images/heberg/hebergementPopulaire3.jpg"
+                  alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville."
+                />
+              </div>
+              <div class="hebergementPopulaireWrapcontentContent">
+                <h3 class="hebergementMainCardFigureCaptionTitle">
+                  a&o Hostel Venezia Mestre
+                </h3>
+                <p class="hebergementMainCardDesc">
                   Nuit à partir de
-                  <strong >96€</strong>
+                  <strong class="hebergementMainCardDescPrice">68€</strong>
                 </p>
-                <div class="styleEtoile">
+                <div class="hebergementPopulaireSpace"></div>
+                <div class="hebergementMainCardGrade">
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
                   <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                  <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
+                  <i
+                    class="fas fa-star styleEtoileIcon"
+                    data-active="false"
+                  ></i>
                 </div>
-              </a>
-            </article>
-            <a class="linkVoirPlus" href="#">Afficher plus</a>
+              </div>
+            </a>
+          </article>
+        </aside>
+        <!-- HEBERGEMENT POPULAIRE-->
+      </section>
+      <!--HEBERGERMENT-->
+      <!-- activite -->
+      <section class="activite" id="activite">
+        <h2 class="activiteTitle">Activités à N'Djamena</h2>
+        <a href="#" class="activiteCard activiteCard1">
+          <div class="activiteCardWrapimg">
+            <img
+              class="activiteCardWrapimgImg"
+              src="./images/heberg/activite1.jpg"
+              alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan"
+            />
           </div>
-
-
-        </section>
-
-                <!-- HEBERGEMENT POPULAIRE-->
-                <aside class="hebergementPopulaire">
-                  <h2 class="hebergementPopulaireTitle">
-                    Les plus populaire <i class="fas fa-chart-line"></i>
-                  </h2>
-                  <article class="hebergementMainCard hebergementPopulaireCard">
-                    <a class="hebergementPopulaireWrapcontent" href="#">
-                      <div class="hebergementPopulaireWrapcontentWrapimg">
-                        <img class="hebergementPopulaireWrapcontentWrapimgImg"
-                          src="./images/heberg/hebergementPopulaire1.jpg"
-                          alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                      </div>
-                      <div class="hebergementPopulaireWrapcontentContent">
-                        <h3 class="hebergementMainCardFigureCaptionTitle">
-                          Ca Dalisera B&B Venezia
-                        </h3>
-                        <p class="hebergementMainCardDesc">
-                          Nuit à partir de
-                          <strong class="hebergementMainCardDescPrice">128€</strong>
-                        </p>
-                        <div class="hebergementPopulaireSpace"></div>
-                        <div class="hebergementMainCardGrade">
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="hebergementMainCard hebergementPopulaireCard">
-                    <a class="hebergementPopulaireWrapcontent" href="#">
-                      <div class="hebergementPopulaireWrapcontentWrapimg">
-                        <img class="hebergementPopulaireWrapcontentWrapimgImg"
-                          src="./images/heberg/hebergementPopulaire2.jpg"
-                          alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                      </div>
-                      <div class="hebergementPopulaireWrapcontentContent">
-                        <h3 class="hebergementMainCardFigureCaptionTitle">
-                          Hotel Florida
-                        </h3>
-                        <p class="hebergementMainCardDesc">
-                          Nuit à partir de
-                          <strong class="hebergementMainCardDescPrice">71€</strong>
-                        </p>
-                        <div class="hebergementPopulaireSpace"></div>
-                        <div class="hebergementMainCardGrade">
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                  <article class="hebergementMainCard hebergementPopulaireCard">
-                    <a class="hebergementPopulaireWrapcontent" href="#">
-                      <div class="hebergementPopulaireWrapcontentWrapimg">
-                        <img class="hebergementPopulaireWrapcontentWrapimgImg"
-                          src="./images/heberg/hebergementPopulaire3.jpg"
-                          alt="Chambre avec un lit superposé avec une fenêtre vu sur la ville." />
-                      </div>
-                      <div class="hebergementPopulaireWrapcontentContent">
-                        <h3 class="hebergementMainCardFigureCaptionTitle">
-                          a&o Hostel Venezia Mestre
-                        </h3>
-                        <p class="hebergementMainCardDesc">
-                          Nuit à partir de
-                          <strong class="hebergementMainCardDescPrice">68€</strong>
-                        </p>
-                        <div class="hebergementPopulaireSpace"></div>
-                        <div class="hebergementMainCardGrade">
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="true"></i>
-                          <i class="fas fa-star styleEtoileIcon" data-active="false"></i>
-                        </div>
-                      </div>
-                    </a>
-                  </article>
-                </aside>
-                <!-- HEBERGEMENT POPULAIRE-->
-  <!--HEBERGERMENT-->
-   <!-- activite -->
-    <section class="activite" id="activite">
-      <h2 class="activiteTitle">Activités à N'Djamena</h2>
-      <a href="#" class="activiteCard activiteCard1">
-        <div class="activiteCardWrapimg">
-          <img class="activiteCardWrapimgImg" src="./images/heberg/activite1.jpg"
-            alt="Un port de plaisance remplis de bateau en premier plan avec une ville dans le second plan" />
-        </div>
-        <h3 class="activiteCardTitle">Parc Nationnal de Zakouma</h3>
-      </a>
-      <a href="#" class="activiteCard activiteCard2">
-        <div class="activiteCardWrapimg">
-          <img class="activiteCardWrapimgImg" src="./images/heberg/activite2.jpg"
-            alt="Visiter le fantastique désert tchadien sans se priver du plaisir" />
-        </div>
-        <h3 class="activiteCardTitle">SAHARA - Autotour Ennedi</h3>
-      </a>
-      <a href="#" class="activiteCard activiteCard3">
-        <div class="activiteCardWrapimg">
-          <img class="activiteCardWrapimgImg" src="./images/heberg/activite3.jpg"
-            alt="L'un des sites touristiques qui peut être visité avec une excursion d'une journée au départ de N'djamena" />
-        </div>
-        <h3 class="activiteCardTitle">la station touristique de Doughia</h3>
-      </a>
-      <a href="#" class="activiteCard activiteCard4">
-        <div class="activiteCardWrapimg">
-          <img class="activiteCardWrapimgImg" src="./images/heberg/activite4.jpg"
-            alt="GGaoui est un village situé à environ 10 km au nord-est. de N'Djamena Connue pour être la capitale de la civilisation Sao" />
-        </div>
-        <h3 class="activiteCardTitle">N'DJAMENA - Village de Gaoui et civilisation Sao</h3>
-      </a>
-      <a href="#" class="activiteCard activiteCard5">
-        <div class="activiteCardWrapimg">
-          <img class="activiteCardWrapimgImg" src="./images/heberg/activite5.jpg"
-            alt="Les montagnes sauvages du massif du Tibesti" />
-        </div>
-        <h3 class="activiteCardTitle">SAHARA - Tibesti</h3>
-      </a>
-      <a href="#" class="activiteCard activiteCard6">
-        <div class="activiteCardWrapimg">
-          <img class="activiteCardWrapimgImg" src="./images/heberg/activite6.jpg"
-            alt="Rencontres avec les clans Wodaabe également connus sous le nom d'ethnie M'Bororo ou Bororo Peul" />
-        </div>
-        <h3 class="activiteCardTitle">ETNIE - Danses traditionnelles Gerewol</h3>
-      </a>
-    </section>
-    <!-- activite -->
-
+          <h3 class="activiteCardTitle">Parc Nationnal de Zakouma</h3>
+        </a>
+        <a href="#" class="activiteCard activiteCard2">
+          <div class="activiteCardWrapimg">
+            <img
+              class="activiteCardWrapimgImg"
+              src="./images/heberg/activite2.jpg"
+              alt="Visiter le fantastique désert tchadien sans se priver du plaisir"
+            />
+          </div>
+          <h3 class="activiteCardTitle">SAHARA - Autotour Ennedi</h3>
+        </a>
+        <a href="#" class="activiteCard activiteCard3">
+          <div class="activiteCardWrapimg">
+            <img
+              class="activiteCardWrapimgImg"
+              src="./images/heberg/activite3.jpg"
+              alt="L'un des sites touristiques qui peut être visité avec une excursion d'une journée au départ de N'djamena"
+            />
+          </div>
+          <h3 class="activiteCardTitle">la station touristique de Doughia</h3>
+        </a>
+        <a href="#" class="activiteCard activiteCard4">
+          <div class="activiteCardWrapimg">
+            <img
+              class="activiteCardWrapimgImg"
+              src="./images/heberg/activite4.jpg"
+              alt="GGaoui est un village situé à environ 10 km au nord-est. de N'Djamena Connue pour être la capitale de la civilisation Sao"
+            />
+          </div>
+          <h3 class="activiteCardTitle">
+            N'DJAMENA - Village de Gaoui et civilisation Sao
+          </h3>
+        </a>
+        <a href="#" class="activiteCard activiteCard5">
+          <div class="activiteCardWrapimg">
+            <img
+              class="activiteCardWrapimgImg"
+              src="./images/heberg/activite5.jpg"
+              alt="Les montagnes sauvages du massif du Tibesti"
+            />
+          </div>
+          <h3 class="activiteCardTitle">SAHARA - Tibesti</h3>
+        </a>
+        <a href="#" class="activiteCard activiteCard6">
+          <div class="activiteCardWrapimg">
+            <img
+              class="activiteCardWrapimgImg"
+              src="./images/heberg/activite6.jpg"
+              alt="Rencontres avec les clans Wodaabe également connus sous le nom d'ethnie M'Bororo ou Bororo Peul"
+            />
+          </div>
+          <h3 class="activiteCardTitle">
+            ETNIE - Danses traditionnelles Gerewol
+          </h3>
+        </a>
+      </section>
+      <!-- activite -->
     </main>
     <footer>
-        <div class="footerDiv1" >
-            <div class="footerDiv2dans1">
-              <h3 >A propos</h3>
-              <a href="#" >Fonctionnement du site</a>
-              <a href="#" >Conditions générales de vente</a>
-              <a href="#" >Données et confidentialités</a>
-            </div>
-            <div class="footerDiv2dans1" >
-              <h3>Nos hébergement</h3>
-              <a href="#" >Charte qualité</a>
-              <a href="#" >Soumettre votre hotel</a>
-            </div>
-            <div class="footerDiv2dans1">
-              <h3 >Assitance</h3>
-              <a href="#" >Centre d'aide</a>
-              <a href="#" >Nous contacter</a>
-            </div>
-          </div>
+      <div class="footerDiv1">
+        <div class="footerDiv2dans1">
+          <h3>A propos</h3>
+          <a href="#">Fonctionnement du site</a>
+          <a href="#">Conditions générales de vente</a>
+          <a href="#">Données et confidentialités</a>
+        </div>
+        <div class="footerDiv2dans1">
+          <h3>Nos hébergement</h3>
+          <a href="#">Charte qualité</a>
+          <a href="#">Soumettre votre hotel</a>
+        </div>
+        <div class="footerDiv2dans1">
+          <h3>Assitance</h3>
+          <a href="#">Centre d'aide</a>
+          <a href="#">Nous contacter</a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
